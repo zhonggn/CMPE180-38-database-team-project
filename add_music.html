@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Add Music</legend>
+Please type the information of the music.
+<form name = "AddMusicForm" method="post" action="add_music.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="add_name" class="lable">name of the music:</lable>
+<input id="add_name" name="add_name" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_fname" class="lable">first name:</lable>
+<input id="add_fname" name="add_fname" type="text" class="input"/>
+<lable for="add_minit" class="lable">minit:</lable>
+<input id="add_minit" name="add_minit" type="text" class="input"/>
+<lable for="add_lname" class="lable">last name:</lable>
+<input id="add_lname" name="add_lname" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_gender" class="lable">gender:</lable>
+<input id="add_gender" name="add_gender" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_company" class="lable">belonging company:</lable>
+<input id="add_company" name="add_company" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_nationality" class="lable">nationality:</lable>
+<input id="add_nationality" name="add_nationality" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_band" class="lable">belonging band:</lable>
+<input id="add_band" name="add_band" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_group" class="lable">belonging group:</lable>
+<input id="add_group" name="add_group" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_year" class="lable">released year:</lable>
+<input id="add_year" name="add_year" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_duration" class="lable">duration:</lable>
+<input id="add_duration" name="add_duration" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_price" class="lable">price:</lable>
+<input id="add_price" name="add_price" type="text" class="input"/>
+</p>
+<p>
+<lable for="available_status" class="lable">available status:</lable>
+<input id="available_status" name="available_status" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="add_music.php">
+<input type="submit" name="add" value="add" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

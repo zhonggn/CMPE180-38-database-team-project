@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Delete User</legend>
+Please type the information of the user that you want to delete.
+<form name = "DeleteUserForm" method="post" action="delete_user.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="delete_name" class="lable">name:</lable>
+<input id="delete_name" name="delete_name" type="text" class="input"/>
+</p>
+<p>
+<lable for="delete_uID" class="lable">user ID:</lable>
+<input id="delete_uID" name="delete_uID" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="delete_user.php">
+<input type="submit" name="delete" value="delete" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

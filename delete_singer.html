@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Delete Singer</legend>
+Please type the information of the singer that you want to delete.
+<form name = "DeleteSingerForm" method="post" action="delete_singer.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="delete_fname" class="lable">first name:</lable>
+<input id="delete_fname" name="delete_fname" type="text" class="input"/>
+<lable for="delete_minit" class="lable">minit:</lable>
+<input id="delete_minit" name="delete_minit" type="text" class="input"/>
+<lable for="delete_lname" class="lable">last name:</lable>
+<input id="delete_lname" name="delete_lname" type="text" class="input"/>
+</p>
+<p>
+<lable for="delete_sID" class="lable">singer ID:</lable>
+<input id="delete_sID" name="delete_sID" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="delete_singer.php">
+<input type="submit" name="delete" value="delete" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

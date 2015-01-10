@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Delete Group</legend>
+Please type the information of the group that you want to delete.
+<form name = "DeleteGroupForm" method="post" action="delete_group.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="delete_name" class="lable">name of the group:</lable>
+<input id="delete_name" name="delete_name" type="text" class="input"/>
+</p>
+<p>
+<lable for="delete_gID" class="lable">group ID:</lable>
+<input id="delete_gID" name="delete_gID" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="delete_group.php">
+<input type="submit" name="delete" value="delete" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

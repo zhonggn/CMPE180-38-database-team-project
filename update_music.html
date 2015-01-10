@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Update Music</legend>
+Please type the information of the music that you want to update.
+<form name = "UpdateMusicForm" method="post" action="update_music.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="original_name" class="lable">original name of the music:</lable>
+<input id="original_name" name="original_name" type="text" class="input"/>
+<lable for="update_name" class="lable">updated name of the music:</lable>
+<input id="update_name" name="update_name" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_year" class="lable">released year:</lable>
+<input id="update_year" name="update_year" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_duration" class="lable">duration:</lable>
+<input id="update_duration" name="update_duration" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_price" class="lable">price:</lable>
+<input id="update_price" name="update_price" type="text" class="input"/>
+</p>
+<p>
+<lable for="available_status" class="lable">available status:</lable>
+<input id="available_status" name="available_status" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="update_music.php">
+<input type="submit" name="update" value="update" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

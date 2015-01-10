@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Add User</legend>
+Please type the information of the user.
+<form name = "AddUserForm" method="post" action="add_user.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="add_name" class="lable">name:</lable>
+<input id="add_name" name="add_name" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_password" class="lable">password:</lable>
+<input id="add_password" name="add_password" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_email" class="lable">email:</lable>
+<input id="add_email" name="add_email" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_date" class="lable">registe date:</lable>
+<input id="add_date" name="add_date" type="text" class="input"/>
+</p>
+<p>
+<lable for="add_balance" class="lable">account balance:</lable>
+<input id="add_balance" name="add_balance" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="add_user.php">
+<input type="submit" name="add" value="add" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>

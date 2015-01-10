@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>Update Singer</legend>
+Please type the information of the singer that you want to update.
+<form name = "UpdateSingerForm" method="post" action="update_singer.php" onSubmit="return InputCheck(this)">
+<p>
+<lable for="original_fname" class="lable">original first name:</lable>
+<input id="original_fname" name="original_fname" type="text" class="input"/>
+<lable for="original_minit" class="lable">minit:</lable>
+<input id="original_minit" name="original_minit" type="text" class="input"/>
+<lable for="original_lname" class="lable">last name:</lable>
+<input id="original_lname" name="original_lname" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_fname" class="lable">updated first name:</lable>
+<input id="update_fname" name="update_fname" type="text" class="input"/>
+<lable for="update_minit" class="lable">minit:</lable>
+<input id="update_minit" name="update_minit" type="text" class="input"/>
+<lable for="update_lname" class="lable">last name:</lable>
+<input id="update_lname" name="update_lname" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_gender" class="lable">gender:</lable>
+<input id="update_gender" name="update_gender" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_company" class="lable">belonging company:</lable>
+<input id="update_company" name="update_company" type="text" class="input"/>
+</p>
+<p>
+<lable for="update_nationality" class="lable">nationality:</lable>
+<input id="update_nationality" name="update_nationality" type="text" class="input"/>
+</p>
+<p>
+<lable for="original_band" class="lable">original belonging band:</lable>
+<input id="original_band" name="original_band" type="text" class="input"/>
+<lable for="update_band" class="lable">updated belonging band:</lable>
+<input id="update_band" name="update_band" type="text" class="input"/>
+</p>
+<p>
+<lable for="original_group" class="lable">original belonging group:</lable>
+<input id="original_group" name="original_group" type="text" class="input"/>
+<lable for="update_group" class="lable">updated belonging group:</lable>
+<input id="update_group" name="update_group" type="text" class="input"/>
+</p>
+<p>
+<form method="post" action="update_singer.php">
+<input type="submit" name="update" value="update" class="left"/>
+</form>
+</p>
+<form action="admin_dashboard.php" method="post">
+<input type="submit" value="return to dashboard">
+</form>
+
+</fieldset>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
